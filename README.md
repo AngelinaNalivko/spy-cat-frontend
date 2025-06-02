@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Spy Cat Agency Frontend
 
-## Getting Started
+This is the **frontend** of the Spy Cat Agency application. It is built using **pure HTML, CSS, and JavaScript (Next.js)**, with custom styles.
 
-First, run the development server:
+## Screenshot
+
+<img width="1440" alt="Image" src="https://github.com/user-attachments/assets/3f310f9b-c2ab-45fa-9416-05836849cc32" />
+
+## How to use it
+
+1. Install dependencies:
+
+```bash
+npm install
+```
+
+2. Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. Open your browser at [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Backend Dependency
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This frontend depends on a running FastAPI backend. Make sure your backend is available at:
 
-## Learn More
+```bash
+http://localhost:8000
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Functionality
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The application implements all the required features described in the project specification:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+* Add new cats with name, breed, experience, and salary
+* Display all cats in clean cards
+* Update a cat's salary with a live input + save interaction
+* Delete a cat
